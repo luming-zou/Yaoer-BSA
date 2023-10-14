@@ -1,4 +1,4 @@
-#!/usr/bin/Rscript
+#!/usr/bin/env Rscript
 #prepare data
 fai<-read.table("REFERENCE.fa.fai", head = F, stringsAsFactors = F)[1:31,]
 starts<-c(1, cumsum(fai[,2])[1:30]+1)
