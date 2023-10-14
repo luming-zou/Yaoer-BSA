@@ -1,5 +1,3 @@
-# Yaoer-BSA
-Scripts for identifying Yaoer transposon in FAW. 
 # Dependencies for the scripts  
 + python3  
 + R 3.6
@@ -51,5 +49,4 @@ delta\_snp\_index.r
 mahattan.r  
   
 	Rscript manhattan.r  
-
 
