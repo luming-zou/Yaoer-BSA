@@ -35,14 +35,22 @@ def process_vcf_file(vcf_filename):
     - None
     '''
 
+    # Open the VCF file
     with open(vcf_filename) as vcf:
+        # Iterate through each line in the VCF file
         for line in vcf:
+            # Skip lines starting with '#', which are comments or header
             if not line.startswith('#'): 
+                # Split the line into fields using tab as the delimiter
                 CHROM, POS, ID, REF, ALT, QUAL, FILTER, INFO, FORMAT, S01, S02, S03, S04 = line.split('\t')
+                
+                # Extract information from the FORMAT field for each sample
                 S01_d = S01.split(':')[1].split(',')
                 S02_d = S02.split(':')[1].split(',')
                 S03_d = S03.split(':')[1].split(',')
                 S04_d = S04.split(':')[1].split(',')
+                
+                # Print the extracted information in a formatted way
                 print('\t'.join(([CHROM, POS, REF, ALT] + S01_d + S02_d + S03_d + S04_d)))
 
 # Example usage:
