@@ -9,7 +9,7 @@ Scripts for identifying Bt resistant locus in FAW.
 + vcftools 0.1.16
 
 # Produce fasta index for the reference genome  
-Note: This fasta index file is required for subsequent delta-index analysis and manhattan plot. The reference genome was downloaded from NCBI (https://www.ncbi.nlm.nih.gov/datasets/genome/GCF\_023101765.2/).   
+Note: This fasta index file is required for subsequent delta-index analysis and manhattan plot. The reference genome was downloaded from NCBI (https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_023101765.2/).   
   
 	samtools faidx REFERENCE.fa  
 
