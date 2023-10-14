@@ -1,9 +1,17 @@
+# Yaoer-BSA
+Scripts for identifying Bt resistant locus in FAW.
+
 # Dependencies for the scripts  
 + python3  
 + R 3.6
 + samtools 1.11  
 + ggplot2 3.4.2
 + vcftools 0.1.16
+
+# Produce fasta index for the reference genome  
+Note: This fasta index file is required for subsequent delta-index analysis and manhattan plot.  
+  
+	samtools faidx REFERENCE.fa  
 
 # Sample list and order  
 + S01, bulk of reistant larvae   
@@ -33,11 +41,6 @@ extract\_depth.py
 filter\_depth.r  
 
 	Rscript filter_depth.r  
-
-# Produce fasta index for the reference genome  
-Note: This fasta index file is required for subsequent delta-index analysis and manhattan plot.  
-  
-	samtools faidx REFERENCE.fa  
 
 # Calculate Delta(SNP-index)  
 delta\_snp\_index.r  
