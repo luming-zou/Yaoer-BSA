@@ -1,4 +1,4 @@
-# Yaoer-BSA
+# FoxtailMillet-BSA
 Scripts for identifying Bt resistant locus in FAW.
 
 # Dependencies for the scripts  
